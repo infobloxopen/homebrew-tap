@@ -1,32 +1,41 @@
 # Homebrew Tap for Infoblox Open Source
 
-This repository contains [Homebrew](https://brew.sh) formulae for Infoblox open-source tools.
+This repository contains [Homebrew](https://brew.sh) formulae and casks for Infoblox open-source tools.
 
-Formulae are **auto-generated** by [GoReleaser](https://goreleaser.com) on each release — do not edit them manually.
+Casks are **auto-generated** by [GoReleaser](https://goreleaser.com) on each release — do not edit them manually.
 
-## Install APX
+## Install APX (macOS)
 
 ```bash
-brew install infobloxopen/tap/apx
+brew install --cask infobloxopen/tap/apx
 ```
+
+> **Note:** APX was previously distributed as a Homebrew Formula. It is now a Cask
+> (which includes shell completions and automatic quarantine bypass). If you
+> installed the old formula, uninstall it first:
+>
+> ```bash
+> brew uninstall apx
+> brew install --cask infobloxopen/tap/apx
+> ```
 
 ## Upgrade
 
 ```bash
-brew upgrade apx
+brew upgrade --cask apx
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall apx
+brew uninstall --cask apx
 ```
 
-## Available Formulae
+## Available Casks
 
-| Formula | Description |
-|---------|-------------|
-| `apx`  | API Publishing eXperience CLI |
+| Cask  | Description |
+|-------|-------------|
+| `apx` | API Publishing eXperience CLI |
 
 ## About
 
