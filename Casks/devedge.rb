@@ -9,27 +9,29 @@ cask "devedge" do
     skip "Auto-generated on release."
   end
 
-  binary "devedge"
+  binary "de"
+  binary "devedged"
+  binary "devedge-dns-webhook"
 
   on_macos do
     on_intel do
       url "https://github.com/infobloxopen/devedge/releases/download/v#{version}/devedge_#{version}_darwin_amd64.tar.gz"
-      sha256 "28e362eb0f1906f3bf450b052fbe33bda56135cbc50e80b8bc49a7d255eba16e"
+      sha256 "83b48d6b92af91ea986c375146998f61cb2d8cd00d3159d3638611c0f560ac0d"
     end
     on_arm do
       url "https://github.com/infobloxopen/devedge/releases/download/v#{version}/devedge_#{version}_darwin_arm64.tar.gz"
-      sha256 "e5a81a40ecc43ee1d63d97ce33b0b3a1747fef249a5411a0d0258669f8038f57"
+      sha256 "7914faacb1e4706dbbe866653403a737634bb1bc4e8071e9a907406669f2330e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/infobloxopen/devedge/releases/download/v#{version}/devedge_#{version}_linux_amd64.tar.gz"
-      sha256 "125746ddd570f4207a8af9400b4bd3acadb67582dd100038ca16b8fec239014a"
+      sha256 "2ad7583167570a4ea7208e0124b9fc2bca2eab4e62d676780c923030a844155b"
     end
     on_arm do
       url "https://github.com/infobloxopen/devedge/releases/download/v#{version}/devedge_#{version}_linux_arm64.tar.gz"
-      sha256 "2f93dc691d08a4c51762dbba066d2ec2e019fb266eefff39cb067aa505976b9a"
+      sha256 "ef3bead430dd52d3517b89ecbd4c8252615f37a688c1e6bf8c4d0dc37de410b8"
     end
   end
 
