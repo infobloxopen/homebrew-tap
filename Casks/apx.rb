@@ -3,7 +3,7 @@ cask "apx" do
   name "apx"
   desc "API Publishing eXperience CLI"
   homepage "https://github.com/infobloxopen/apx"
-  version "0.10.0-beta.1"
+  version "0.11.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "apx" do
   on_macos do
     on_intel do
       url "https://github.com/infobloxopen/apx/releases/download/v#{version}/apx_#{version}_darwin_amd64.tar.gz"
-      sha256 "16f5e45e368f1b8e18834c81794fbe20f65e6fe35c3f2af3a3b4b87d328d8614"
+      sha256 "79e49dfee9a4d118d22c217eb9bae95ac6e3c463d4c3a49dad5c7940214bd53d"
     end
     on_arm do
       url "https://github.com/infobloxopen/apx/releases/download/v#{version}/apx_#{version}_darwin_arm64.tar.gz"
-      sha256 "f3d408317d6026daa088b9d62deda0cc6fdd67b718714446bf30f17ebc27b0ef"
+      sha256 "5370da887b318a0719a7715fa75c2437880c09bb4ebf03803e70d39cd547aef0"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/infobloxopen/apx/releases/download/v#{version}/apx_#{version}_linux_amd64.tar.gz"
-      sha256 "884f7acc1356380b4640cc49c8c0d3ef1033eda1176b88509f5ec7ba447dcedc"
+      sha256 "2fc2d5d15cbd83720cd1d9e41f7946c0ab34209e691c776ec872cf227e63a771"
     end
     on_arm do
       url "https://github.com/infobloxopen/apx/releases/download/v#{version}/apx_#{version}_linux_arm64.tar.gz"
-      sha256 "24dce17b595deec93be7742dff469e9ae176a85f95da549a847d5616444ce96f"
+      sha256 "bd4585943d3c4d954a9c6bbdbc6a1df4ffd84efc194ae06cddd9b9d47f7b5a33"
     end
   end
 
